@@ -18,10 +18,10 @@
 ###########################################################################
 
 # Add target to project dependency list
-PROJECT_TARGET_ADD(afm-navigation-binding)
+PROJECT_TARGET_ADD(afm-osrm-binding)
 
 	# Define project Targets
-	add_library(afm-navigation-binding MODULE navigation-api.c)
+	add_library(afm-osrm-binding MODULE osrm-api.c)
 
 	# Binder exposes a unique public entry point
 	SET_TARGET_PROPERTIES(${TARGET_NAME} PROPERTIES
